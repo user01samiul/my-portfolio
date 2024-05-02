@@ -1,0 +1,101 @@
+//tailwind config
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.sidebar {
+  position: relative;
+  left: 0;
+  top: 0;
+  // border-right: 1px solid #ccc;
+}
+
+.grid1 {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 190px 260px;
+  // justify-items: center;
+
+  .box {
+    // border: 1px solid black;
+  }
+
+  .box1 {
+    // styles for .box1
+  }
+
+  .box2 {
+    // styles for .box2
+  }
+
+  .box3 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+//box outline
+.midCard,
+.bigCard,
+.socialBox {
+  border: 1px solid rgb(0, 0, 0, 0.08);
+}
+.midCardText {
+  flex: 2;
+}
+.midCardPhoto {
+  flex: 1;
+}
+.bigCard {
+  // display: flex;
+}
+
+.bigCardText {
+  width: 60%;
+}
+
+.bigCardPhotos {
+  flex: 1;
+  display: grid;
+  padding-right: 20px;
+  justify-content: right;
+  align-items: center;
+  justify-items: center;
+  margin: auto 0;
+  gap: 3px;
+  grid-template-columns: repeat(2, 80px);
+  grid-template-rows: repeat(2, 80px);
+}
+.grid2 {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(2, 150px);
+
+  .social1 {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+}
+
+
+//responsive 
+@media (min-width: 768px) and (max-width: 1023px){ 
+  .grid1 {
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: 190px 260px;
+    // justify-items: center;
+  }
+ }
