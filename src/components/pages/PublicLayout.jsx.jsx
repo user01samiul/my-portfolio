@@ -1,14 +1,14 @@
 import React from "react";
-import Content from "../Content";
 import Sidebar from "../Sidebar";
+import { Outlet } from 'react-router-dom';
 
-function Home() {
+function PublicLayout() {
   return (
     <section className="h-full w-full flex flex-row">
       <Sidebar />
-      <Content />
+      <Outlet />
     </section>
   );
 }
 
-export default Home;
+export default PublicLayout;
