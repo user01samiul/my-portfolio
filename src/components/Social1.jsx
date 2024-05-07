@@ -1,8 +1,10 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 function Social1({ ext }) {
   return (
     <div
+      
       className={`social1 ${ext} shadow-sm ease-in duration-100 active:scale-[0.99] cursor-pointer flex flex-col items-center relative sm:rounded-[25px] rounded-xl socialBox bg-[rgb(0,118,178,0.07)] hover:bg-[rgb(0,118,178,0.14)] active:bg-[rgb(0,118,178,0.14)]`}
     >
       <div className="image w-full flex mt-6 justify-center">

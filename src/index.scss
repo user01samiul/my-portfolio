@@ -123,16 +123,19 @@
 
 //responsive
 @media (min-width: 926px) and (max-width: 1023px) {
+  .gg{
+    @apply mt-8;
+  }
   .sidebar {
     display: block;
   }
   .grid1 {
-    height: 75%;
+
     display: grid;
     justify-content: center;
     gap: 15px;
     grid-template-columns: repeat(2, 250px);
-    grid-template-rows: 190px 260px;
+    grid-template-rows: 152px 207px;
     // justify-items: center;
     .bigCardPhotos {
       flex: 1;

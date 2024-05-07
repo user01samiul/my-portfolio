@@ -1,8 +1,11 @@
 import React from "react";
+import {motion} from "framer-motion"
 
 function Social2({ icon, title, id, cardColor, btnColor, ext }) {
+
   return (
     <div
+
       className={`social2 shadow-sm ${cardColor} ${ext} ease-in duration-100 active:scale-[0.99] cursor-pointer  relative sm:rounded-[25px] rounded-xl socialBox lg:p-3 p-[9px] `}
     >
       <div>
