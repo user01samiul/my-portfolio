@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import React from "react";
 
 function Midcard({ title, photoURL, details, btnColor, cardColor }) {
- 
-  return (
-    <div
+  
 
+  return (
+    <motion.div
       className={`midCard lg:h-[187px] sm:h-[150px] h-[90px] shadow-sm  cursor-pointer active:scale-[0.99] ease-in duration-100 rounded-[25PX]  flex sm:p-4 p-3 ${cardColor}`}
+    
+
     >
       <div className="midCardText relative">
         <h3 className="sm:text-[18px] lg:text-[22px] text-[10px]">{title}</h3>
@@ -29,7 +31,7 @@ function Midcard({ title, photoURL, details, btnColor, cardColor }) {
           alt={photoURL}
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

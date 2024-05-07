@@ -1,10 +1,31 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Bigcard from "./Bigcard";
 import Midcard from "./Midcard";
 
 function Grid1() {
+  const constVariants = {
+    hidden: {
+      y: 20,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        ease: "linear",
+        duration: 0.5,
+        delay: 0.2,
+      },
+    },
+  };
   return (
-    <div className="grid1   ">
+    <motion.div
+      className="grid1"
+      variants={constVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="box1 box">
         <Midcard
           title="Expertise"
@@ -26,7 +47,7 @@ function Grid1() {
       <div className="box3 box">
         <Bigcard />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

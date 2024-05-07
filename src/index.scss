@@ -121,6 +121,20 @@
   line-height: 1px;
 }
 
+// .animated-h2{
+//   animation: animate 0.5s linear ;
+// }
+@keyframes animate{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 //responsive
 @media (min-width: 926px) and (max-width: 1023px) {
   .gg{

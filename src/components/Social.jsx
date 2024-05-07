@@ -1,11 +1,29 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Social1 from "./Social1";
 import Social2 from "./Social2";
 
 function Social() {
+  const constVariants = {
+    hidden: {
+      y: 20,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        ease: "linear",
+        duration: 0.5,
+        delay: 0.2,
+      },
+    },
+  };
   return (
-    <div >
-      <h2 className="gg lg:text-xl lg:mt-8 lg:text-left text-center md:text-lg mb-4">Connect with me</h2>
+    <motion.div variants={constVariants} initial="hidden" animate="visible">
+      <h2 className="gg lg:text-xl lg:mt-8 lg:text-left text-center md:text-lg mb-4">
+        Connect with me
+      </h2>
       <div className="grid2 ">
         <Social1 ext="social1" />
         <Social2
@@ -45,7 +63,7 @@ function Social() {
 
         <div className="social6 socialBoxx"></div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
