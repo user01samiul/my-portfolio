@@ -4,8 +4,8 @@ import Social2 from "./Social2";
 
 function Social() {
   return (
-    <div>
-      <h2 className="text-2xl mb-3">Connect with me</h2>
+    <div >
+      <h2 className="lg:text-xl lg:text-left text-center md:text-lg mb-4">Connect with me</h2>
       <div className="grid2 ">
         <Social1 ext="social1" />
         <Social2

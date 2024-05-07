@@ -5,7 +5,7 @@ import Social from "./Social";
 
 function Content() {
   return (
-    <div className="content flex-1  h-auto md:px-3 lg:px-3 xl:px-28 py-8">
+    <div className="content h-auto md:px-3 px-2 lg:px-3 xl:px-28 py-8">
       <Grid1 />
       <Social />
     </div>
