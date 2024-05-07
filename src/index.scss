@@ -96,27 +96,30 @@
     flex: 2;
   }
 }
-.form-container{
+.form-container {
   margin-top: 15px;
-  box-shadow: 0px 1px 3px 1px #D7D7D7;
+  box-shadow: 0px 1px 3px 1px #d7d7d7;
   border-radius: 25px;
   padding: 5px 30px 10px 30px;
 }
 
-.form-input-field{
+.form-input-field {
   background: #eee;
   height: 45px;
   padding: 0 10px;
-  &:focus{
+  &:focus {
     outline: 1px solid rgba(14, 94, 243, 0.555);
   }
 }
-.form-textarea{
-  padding: 10px ;
+.form-textarea {
+  padding: 10px;
   height: 30vh;
   resize: none;
 }
-
+.ext{
+  font-size: 7px;
+  line-height: 1px;
+}
 
 //responsive
 @media (min-width: 926px) and (max-width: 1023px) {
@@ -146,8 +149,7 @@
   }
 }
 
-
-@media (min-width: 0px) and (max-width: 925px) {
+@media (min-width: 640px) and (max-width: 925px) {
   .sidebar {
     display: none;
   }
@@ -178,5 +180,47 @@
     justify-content: center;
     grid-template-columns: repeat(4, 120px);
     grid-template-rows: repeat(2, 120px);
+  }
+}
+@media (min-width: 0px) and (max-width: 639px) {
+  .sidebar {
+    display: none;
+  }
+  .grid1 {
+    height: 48%;
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: 95px 150px;
+    // justify-items: center;
+    .bigCardPhotos {
+      flex: 1;
+      display: grid;
+      padding-right: 20px;
+      justify-content: right;
+      align-items: center;
+      justify-items: center;
+      margin: auto 0;
+      gap: 3px;
+      grid-template-columns: repeat(2, 40px);
+      grid-template-rows: repeat(2, 40px);
+    }
+  }
+  .grid2 {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 77px);
+    grid-template-rows: repeat(2, 77px);
+  }
+  .mid-card-text-span{
+    font-size: 7px;
+    margin: 0;
+    padding:0;
+  }
+  .form-container {
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
   }
 }

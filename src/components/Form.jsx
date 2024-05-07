@@ -26,12 +26,14 @@ function Form() {
         <div className="w-full my-2">
           <button
             type="submit"
-            className="bg-green-600 uppercase w-full text-white font-semibold py-2 mb-3"
+            className="bg-green-600 md:text-base text-sm active:scale-[0.997] uppercase w-full text-white font-semibold py-2 mb-3"
           >
             Submit
           </button>
         </div>
       </form>
+      <div className="w-[50%]">
+      </div>
     </div>
   );
 }
