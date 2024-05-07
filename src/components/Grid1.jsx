@@ -4,7 +4,7 @@ import Midcard from "./Midcard";
 
 function Grid1() {
   return (
-    <div className="grid1 lg:h-[88%] md:h-[70%]  ">
+    <div className="grid1 lg:h-[88%]  ">
       <div className="box1 box">
         <Midcard
           title="Expertise"
